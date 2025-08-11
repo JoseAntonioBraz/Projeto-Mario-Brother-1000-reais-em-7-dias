@@ -1,0 +1,128 @@
+.nossos-servicos { /*estiliza os itens que estão dentro da div class=".nossos-servicos"*/
+     height: 100vh; /*define a altura da página*/ /*a unidade vh quer dizer viewport height (100% da altura da viewport)*/ 
+}
+
+.caixa-background { /*estiliza os itens que estão dentro da div class=".caixa-background"*/
+    position: fixed; /*fixa a imagem na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (nesse caso é o top: 0;)*/
+    top: 0; /*encosta a imagem no topo da tela (fica grudado no topo da viewport)*/
+    z-index: -1; /*posiciona a imagem atrás dos outros elementos*//*z-index determina o eixo Z de um item*/
+}
+
+.caixa-background img { /*Estilisa a imagem de fundo da pagina*/
+    min-height: 100%; /*define a altura minima da imagem*//*a unidade vh quer dizer viewport height (100% da altura da viewport)*/
+    min-width: 100%; /*define a largura minima da imagem*//*a unidade vw quer dizer viewport width (100% da largura da viewport)*/
+    position: fixed; /*fixa a imagem na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (nesse caso é o top: 0;)*/
+    top: 0; /*encosta a imagem no topo da tela (fica grudado no topo da viewport)*/
+}
+
+.mascara { /*estiliza os itens que estão dentro da div class="mascara"*/
+    min-height: 100%; /*define a altura da mascara*//*a unidade vh quer dizer viewport height (100% da altura da viewport)*/
+    min-width: 100%; /*define a largura da mascara*//*a unidade vw quer dizer viewport width (100% da largura da viewport)*/
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); /*cria o efeito gradiente linear na mascara*/
+    position: fixed; /*fixa a mascara na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (nesse caso é o top: 0;)*/
+    top: 0; /*encosta a mascara no topo da tela (fica grudado no topo da viewport)*/
+}
+
+.header { /*cabeçalho da página*/
+    display: flex; /*por padrão coloca os itens alinhados um do lado do outro*/
+    align-items: center; /*alinhar os itens no sentido vertical do header*//*align-items alinha os itens no eixo vertical*/
+    gap: 30px; /*faz um distancimento entre os itens*/
+    margin: 30px; /*margem de 30px em todos os lados *//*para um lado só, use margin-left, right etc.*/
+}
+
+.header a { /*texto do menu*/
+    color: aliceblue; /*coloca cor nas palavras do menu*/
+    text-decoration: none; /* remove o sublinhado */
+    font-size: 24px; /*define o tamanho da letra do menu header*/
+    cursor: pointer; /*define que vai aparecer uma mão ao passar o mouse no menu*/  
+}
+
+.header a:hover { /*aplica o efeito hover no texto do menu*/
+    color: #C51111; /*faz a transição da cor no texto do menu para vermelho*/
+    font-size: 26px; /*aumenta o tamanho da fonte do menu na transição*/
+    transition: 0.5s ease-in-out; /* aplica transição em 0.5s com efeito suave para cor e tamanho */
+}
+
+.header img { /*estiliza a imagem do header*/
+    height: 60px; /*define o tamanho do logo do header*/
+}
+
+.formulario-fale-conosco { /*aplica efeito no formulário da página*/
+    background-color: aliceblue; /*deixa o fundo do formulario na cor aliceblue*/
+    display: flex; /*habilita a configuração das disposição dos itens na tela*/
+    gap: 20px; /*define um espaçamento entre os inputs do formulario*//*gap só pode ser usado com o display flex*/
+    flex-direction: column; /*posiciona os itens do formulario na posição vertical em coluna*/
+    position: fixed; /*fixa o formulario na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (nesse caso é o top: 0;)*/
+    left: -300px; /*posiciona o formulario -300px da borda esquerda deixando vizivel uma pequena parte*/
+    top: 40%; /*encosta o formulario no topo da tela (fica grudado no topo da viewport)*/
+    padding: 20px; /*é usado para dar um espaçamento interno nos itens do formulario*/
+    border-radius: 5px; /*deixa a borda do formulario arredondado*/
+    transition: left 1s ease-in-out;  /* aplica transição de 1s no formulario left *//* efeito suave no movimento horizontal */
+}
+
+input { /*aplica efeito no input*/
+    height: 40px; /*define a altura do input*/
+    border-radius:5px; /*deixa a borda do input arredondadas*/
+    border: 1px solid gray; /*adiciona uma borda cinza sólida de 1 pixel ao redor do input*/
+    padding-left: 5px; /*adiciona um espaço de interno de 5px no input*/
+    outline-color: #18D80F; /*adiciona uma borda verde #18D80F ao redor do input ao ser clicado*/
+}
+
+textarea { /*aplica efeito no textarea*/
+    width: 270px; /*define a largura do textarea*/
+    height: 100px; /*define a altura do textarea*/
+    border-radius:5px; /*deixa a borda do input arredondadas*/
+    border: 1px solid gray; /*adiciona uma borda cinza sólida de 1 pixel ao redor do input*/
+    padding-left: 5px; /*adiciona um espaço de interno de 5px no input*/
+    outline-color: #18D80F; /*adiciona uma borda verde #18D80F ao redor do input ao ser clicado*/
+}
+
+button { /*estiliza o botão entre em contato*/
+    color: aliceblue; /*cor do texto do botão*/
+    background-color: #C51111; /*cor de fundo do botão */
+    border-radius: 3px; /*arredonda a borda do botão*/
+    border: none; /*indica que o botão não tem linha de contorno*/
+    width: 200px; /*define a largura do botão*/
+    height: 50px; /*define a altura do botão*/
+    cursor: pointer; /*define que vai aparecer uma mão ao passar o mouse no botão */
+    text-transform: uppercase; /*deixa o texto do botão em maiusculo*/
+    font-weight: bold; /*deixa a fonte do botão em negrito */
+    margin-top: 30px; /*define um espaçamento de 30px entre o botão entre em contato e o texto*/
+}
+
+.btn:hover { /* Aplica estilos quando o mouse passa sobre um elemento com a classe "btn" */
+    background-color: #004C10; /*cor de fundo do botão */
+    transition: 0.5s ease-in-out; /* aplica transição em 0.5s com efeito suave para cor e tamanho */
+}
+
+.mascara-formulario { /*estiliza a mascara que apaerece junto com o movimento do formulario*/
+    visibility: hidden; /*esconde a mascara do formulario */
+    position: fixed; /*fixa a mascara na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (nesse caso é o top: 0;)*/
+    top: 0; /*encosta a mascara no topo da tela (fica grudado no topo da viewport)*/
+    width: 100vw; /*define a largura da mascara*//*a unidade vw quer dizer viewport width (100% da largura da viewport)*/
+    height: 100vh; /*define a altura da mascara*//*a unidade vh quer dizer viewport height (100% da altura da viewport)*/ 
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); /*cria o efeito gradiente linear na mascara*/
+    transition: visibility 1s ease-in-out;
+}
+
+.caixa-mae-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-mae-nossos-servicos"*/
+    display: flex; /*por padrão coloca os itens alinhados um do lado do outro*/
+    align-items: start; /*alinhar os itens no meio da página*//*align-items alinha os itens no eixo vertical*/
+    justify-content: space-around; /*define um espaçamento entre os itens*//*justify-content alinha os itens no eixo horizontal*/
+    padding: 100px; /*é usado para dar um espaçamento interno no item*/
+    height: 100vh; /*define a altura da página*/ /*a unidade vh quer dizer viewport height (100% da altura da viewport)*/
+}
+
+.caixa-principal-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-principal-nossos-servicos"*/
+    margin-left: 899px; /*controla a posição do logo-mario referente a distância da margem esquerda*/
+    width: 40%; /*faz com que a largura do texto ocupe 40% da tela*/
+    color: aliceblue; /*cor do texto da página*/
+    font-size: 20px; /*define o tamanho do texto*/
+}
+
+.link-whatsapp img {  /*estiliza o icone whatsapp*//*a tag img vai do lado da .link-whatsapp por que a class está na tag <a> la no HTML e a img ta dentro da tag <a>*/
+    height: 60px; /*tamanho do logo do whatsapp*/
+    position: fixed; /*fixa o logo na mesma posição ao rolar a página*//*quando usar position: fixed precisa informar a posição do elemento (right: 20px; bottom: 20px;)*/
+    right: 20px; /*posiciona o logo whatsapp todo para a direita deixando 20 px de espaço sem encostar na tela*/ 
+    bottom: 20px; /*posiciona o logo whatsapp todo para baixo deixando 20 px de espaço sem encostar na tela*/
+}

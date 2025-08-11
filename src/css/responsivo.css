@@ -1,0 +1,49 @@
+@media (max-width: 1024px) { /* Aplica os estilos abaixo quando a largura da viewport for igual ou menor que 1024px (responsivo para tablets e celulares maiores) */ 
+
+    p {  /* Seleciona todos os parágrafos e os esconde nesse breakpoint */
+        display: none; /* Remove o parágrafo da renderização na tela menor */
+    }
+
+    
+    .caixa-mae { /* Container principal (mãe) ajusta o layout para coluna e adiciona espaçamento interno */
+        flex-direction: column; /* Empilha filhos verticalmente em vez de horizontalmente */
+        padding: 10px; /* Espaçamento interno reduzido para adequar em telas menores */
+    }
+
+    
+    .caixa-principal { /* Caixa de conteúdo principal */
+        display: flex; /* Usa flexbox para posicionamento */
+        align-items: center; /* Centraliza os itens no eixo transversal */
+        flex-direction: column; /* Direciona os filhos em coluna para adaptar ao espaço estreito */
+    }
+
+   
+    .imagem-mario-luigi {  /* Imagem dos personagens Mario & Luigi */
+        margin-bottom: 40px; /* Espaço abaixo da imagem */
+        width: 50vw; /* Largura responsiva: 50% da viewport */
+        height: auto; /* Mantém proporção original da imagem */
+    }
+
+    
+    .header { /* Cabeçalho da página */
+        margin: 30px; /* Margem ao redor do header */
+        flex-direction: column; /* Organiza conteúdo em coluna para melhor leitura em mobile */
+        display: flex; /* Ativa flexbox */
+        align-items: center; /* Centraliza itens horizontalmente */
+        justify-content: center; /* Centraliza itens verticalmente */
+        margin-right: 11px; /* Ajuste fino de espaçamento à direita */
+        gap: 15px; /* Espaçamento entre os filhos do header */
+    }
+
+    
+    .header a { /* Links dentro do header */
+        font-size: 19px; /* Aumenta a legibilidade dos links em telas menores */
+    }
+
+   
+    .logo-mario {  /* Logo do Mario */
+        margin-left: 0; /* Remove recuo à esquerda */
+        margin-bottom: 20px; /* Espaço abaixo da logo para separar dos outros elementos */
+    }
+
+}

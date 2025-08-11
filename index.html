@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Informa ao navegador que este é um documento HTML5 -->
+<html lang="pt-br"> <!---->
+
+<head> <!---->
+    <meta charset="UTF-8"> <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css"> <!---->
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title> Irmãos Mario</title> <!---->
+</head> <!---->
+
+<body> <!---->
+     <div class="mascara-formulario" onclick="esconderForm()"></div> <!---->
+     <div class="caixa-video"> <!---->
+        <video src="./src/img/video.mp4" autoplay muted loop></video>
+        <!--adiciona um video com autoplay mutado e em loop -->
+        <div class="mascara"></div> <!---->
+    </div> <!---->
+    
+      <form class="formulario-fale-conosco" action="https://formcarry.com/s/tAjOOj-3Lcq" method="POST" enctype="multipart/form-data"> <!---->
+        <input placeholder="Seu nome" type="text" name="nome"> <!---->
+        <input placeholder="Seu telefone" type="tel" name="telefone"> <!---->
+        <textarea placeholder="Digite seu problema aqui...!" name="duvida"></textarea> <!---->
+        <button type="submit" class="btn">Pedir Orçamento</button> <!---->
+    </form> <!---->
+
+    <div class="header"> <!---->
+        <img src="./src/img/logo-header.png" alt="logo header"> <!---->
+        <a href="./index.html">Home</a> <!---->
+        <a href="./nossos-servicos.html">Nossos Serviços</a> <!---->
+        <a onclick="mostrarFaleConosco()" href="#fale-conosco">Fale Conosco</a> <!---->
+    </div> <!---->
+
+    <div class="caixa-mae"> <!---->
+
+        <div class="caixa-principal"> <!---->
+            <img src="./src/img/logo.png" alt="logo do mario bros" class="logo-mario"> <!---->
+
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+
+            <br> <!---->
+
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos
+                ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a
+                vocês
+                os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p> <!---->
+
+            <button onclick="mostrarForm()" class="btn">Entre em contato</button> <!---->
+
+        </div> <!---->
+
+        <div><!---->
+            <img src="./src/img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi"> <!---->
+
+        </div> <!---->
+
+    </div> <!---->
+
+    <a href="https://wa.me/5551999999999?text=Quero%20falar%20com%20os%20irm%C3%A3os%20mario." class="link-whatsapp">
+        <!---->
+
+        <img src="./src/img/whatsapp.png" alt="link para o whatsapp"> <!---->
+
+    </a> <!---->
+
+  
+</body> <!---->
+<script src="./src/js/script.js"></script>
+
+</html> <!---->

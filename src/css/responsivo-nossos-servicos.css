@@ -1,0 +1,67 @@
+@media (max-width: 1024px) { /* Aplica os estilos abaixo quando a largura da viewport for igual ou menor que 1024px (telas maiores/mobile/tablet) */
+  .caixa-mae-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-principal-nossos-servicos"*/
+    flex-direction: column; /* Organiza os elementos filhos em coluna (vertical) em vez de linha */
+    align-items: center; /* Centraliza os filhos horizontalmente dentro da caixa mãe */
+    padding: 40px 20px; /* Espaçamento interno: 40px em cima/baixo e 20px nas laterais */
+    height: auto; /* Altura se ajusta ao conteúdo (não fixa) */
+  }
+
+  .caixa-principal-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-principal-nossos-servicos"*/
+    width: 90%; /* Define largura como 90% do contêiner pai para dar margem nas laterais */
+    margin-left: 0; /* Remove qualquer margem esquerda pré-existente */
+    text-align: center; /* Centraliza o texto dentro dessa caixa */
+  }
+
+  .header { /*cabeçalho da página*/
+    flex-direction: column; /* Empilha os itens do cabeçalho verticalmente */
+    align-items: center; /* Centraliza os itens do header horizontalmente */
+    gap: 20px; /* Espaçamento de 20px entre os filhos do header */
+  }
+
+  .header a { /*texto do menu*/
+    font-size: 20px; /* Aumenta o tamanho da fonte dos links para melhor legibilidade em telas médias */
+  }
+
+  textarea { /*aplica efeito no textarea*/
+    width: 100%; /* Faz o campo de texto ocupar 100% da largura disponível */
+  }
+
+  button { /*estiliza o botão entre em contato*/
+    width: 100%; /* Faz o botão ocupar toda a largura possível (responsivo) */
+  }
+}
+
+/* ---------- Celulares médios (até 768px) ---------- */
+@media (max-width: 768px) { /* Aplica os estilos abaixo quando a largura da viewport for igual ou menor que 768px (telas menores/mobile/tablet) */
+  .caixa-mae-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-principal-nossos-servicos"*/
+    padding: 20px; /* Reduz o padding para economizar espaço em telas menores */
+  }
+
+  .header img {
+    height: 50px; /* Define a altura da imagem do header para manter proporção e caber bem */
+  }
+
+  .header a { /*texto do menu*/
+    font-size: 18px; /* Ajusta o tamanho da fonte dos links para telas menores */
+  }
+
+  .link-whatsapp img { /*estiliza a imagem do header*/
+    height: 50px; /* Define a altura do ícone/imagem do WhatsApp para consistência visual */
+  }
+}
+
+
+@media (max-width: 480px) { /* ---------- Celulares pequenos (até 480px) ---------- */
+  .caixa-principal-nossos-servicos { /*estiliza os itens que estão dentro da div class="caixa-principal-nossos-servicos"*/
+    width: 100%; /* Usa 100% da largura disponível para aproveitar o espaço em telas pequenas */
+    font-size: 16px; /* Ajusta o tamanho da fonte para manter legibilidade sem exagerar */
+  }
+
+  textarea { /*aplica efeito no textarea*/
+    height: 80px; /* Define uma altura fixa menor para o campo de texto, economizando espaço vertical */
+  }
+
+  .header a { /*texto do menu*/
+    font-size: 17px; /* Leve redução do tamanho da fonte dos links para se ajustar à largura menor */
+  }
+}

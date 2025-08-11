@@ -1,0 +1,5 @@
+* { /*reset da pagina*/
+    margin: 0; /*zera a margin que é o espaçamento externo*/
+    padding: 0; /*zera o padding que é o espaçamento interno */
+    box-sizing: border-box; /*ajuda a calcular a distância dos elementos (faz com que o tamanho do elemento inclua padding e borda)*/
+}
